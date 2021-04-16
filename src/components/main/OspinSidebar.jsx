@@ -65,15 +65,6 @@ class OspinSidebar extends React.Component {
             Changelog
           </Menu.Item>
 
-          <Menu.Item
-            active={activeTab === 'bug'}
-            onClick={() => this.changeMenuTabHandler('bug')}
-            as='a'
-          >
-            <Icon name='bug' color='red' />
-            TestBug
-          </Menu.Item>
-
           <Menu.Item disabled as='a'>
             <Icon name='log out' />
             Logout

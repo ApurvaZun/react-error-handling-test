@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Segment, Image } from 'semantic-ui-react'
-import { withRouter } from 'react-router-dom'
 
 import errorPage from '../../images/github_500.jpeg'
 
@@ -20,4 +19,4 @@ const ErrorPage = props => {
   )
 }
 
-export default withRouter(ErrorPage)
+export default ErrorPage

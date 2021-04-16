@@ -7,7 +7,6 @@ import Devices from 'components/devices/Devices'
 import Changelog from 'components/changelog/Changelog'
 import Profile from 'components/profile/Profile'
 import Notifications from 'components/notifications/Notifications'
-import BugFile from 'components/error/BugFile'
 import ErrorBoundary from 'components/error/ErrorBoundary'
 import ErrorPage from 'components/error/ErrorPage'
 
@@ -60,15 +59,6 @@ const Main = () => (
           />
 
           <Route exact path='/error' component={ErrorPage} />
-
-          <Route
-            path='/bug'
-            render={(props, history) => (
-              <ErrorBoundary props={props} history={history} >
-                <BugFile />
-              </ErrorBoundary>
-            )}
-          />
 
           <Route
             path='/'
